@@ -7,20 +7,16 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace mvc
-{
-    public class Program
-    {
-        public static void Main(string[] args)
-        {
-            CreateHostBuilder(args).Build().Run();
-        }
-
-        public static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args)
-                .ConfigureWebHostDefaults(webBuilder =>
-                {
-                    webBuilder.UseStartup<Startup>();
-                });
+namespace SampleWebAPI {
+  public class Program {
+    public static void Main(String[] args) {
+      CreateHostBuilder(args).Build().Run();
     }
+
+    public static IHostBuilder CreateHostBuilder(String[] args) =>
+      Host.CreateDefaultBuilder(args)
+        .ConfigureWebHostDefaults(webBuilder => {
+          webBuilder.UseStartup<Startup>();
+        });
+  }
 }

@@ -1,4 +1,7 @@
 # Install .Net 5.0
+
+Original Source: [@shrek231/DOTNET-5](https://replit.com/@shrek231/DOTNET-5)
+
 This sample repl demonstrates a Hack that allows you to use the new .NET5 sdk (5.0.103) with full dotnet cli and nuget support.
 
 Clicking the Run command checks if latest sdk is installed (if not it is installed) and attempts to run current project. To run dotnet from the command prompt use the supplied script as follows

@@ -1,11 +1,9 @@
 using System;
 
-namespace mvc.Models
-{
-    public class ErrorViewModel
-    {
-        public string RequestId { get; set; }
+namespace SampleWebAPI.Models {
+  public class ErrorViewModel {
+    public string RequestId { get; set; }
 
-        public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
-    }
+    public bool ShowRequestId => !String.IsNullOrEmpty(RequestId);
+  }
 }
