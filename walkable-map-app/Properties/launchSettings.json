@@ -17,8 +17,9 @@
     },
     "walkable_map_app": {
       "commandName": "Project",
-      "launchBrowser": true,
-      "applicationUrl": "https://localhost:5001;http://localhost:5000",
+      "dotnetRunMessages": "true",
+      "launchBrowser": false,
+      "applicationUrl": "http://0.0.0.0:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
