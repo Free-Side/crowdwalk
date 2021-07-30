@@ -5,6 +5,8 @@ using System.Xml.Serialization;
 namespace ServcoHackathon.Data {
     [XmlRoot("gpx", Namespace = "http://www.topografix.com/GPX/1/1")]
     public class GpxData {
+        public const String Namespace = "http://www.topografix.com/GPX/1/1";
+
         [XmlAttribute("creator", Namespace = "http://www.topografix.com/GPX/1/1")]
         public String Creator { get; set; }
 

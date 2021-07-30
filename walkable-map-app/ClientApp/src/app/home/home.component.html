@@ -1,9 +1,14 @@
-<div class="map"
-     leaflet
-     [leafletOptions]="mapOptions"
-     [leafletLayers]="mapLayers"
-     (leafletMapReady)="onMapReady($event)"
-     (leafletMapMove)="onMapMoving()"
-     (leafletMapMoveEnd)="onMapMoved()">
+<div class="map-container">
+  <div class="map"
+    leaflet
+    [leafletOptions]="mapOptions"
+    [leafletLayers]="mapLayers"
+    (leafletMapReady)="onMapReady($event)"
+    (leafletMapMove)="onMapMoving()"
+    (leafletMapMoveEnd)="onMapMoved()">
+  </div>
+  <div id="video-container" [class]="videoContainerClasses" #videoContainer>
+
+  </div>
 </div>
-<div class="location">{{ location }}</div>
+<div class="location">{{ mapCenter }} - ({{ timeOffset.toFixed(1) }}; {{ (percentComplete * 100).toFixed(1) }}%)</div>
