@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+code {
+  color: #e01a76;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+body, html {
+  height: 100%;
+}
+
+.root-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  header.navbar-container {
+    position: relative;
+    z-index: 1;
+  }
+
+  .main-container {
+    flex-grow: 1;
+    position: relative;
+    z-index: 0;
+
+    .map {
+      height: 100%;
+    }
+  }
+}

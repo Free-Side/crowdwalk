@@ -1,4 +1,7 @@
-<div style="height: 300px;"
+<div class="map"
      leaflet
-     [leafletOptions]="mapOptions">
+     [leafletOptions]="mapOptions"
+     (leafletMapReady)="onMapReady($event)"
+     (leafletMapMove)="onMapMoved($event)">
 </div>
+<div class="location">{{ location }}</div>
