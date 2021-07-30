@@ -1,4 +1,4 @@
-# Walkable Map App
+# CrowdWalk
 
 A browser based mapping app for discovering walkable streets.
 

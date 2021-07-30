@@ -35,6 +35,7 @@ export class HomeComponent {
   public onMapReady(map: Map) {
     this._mapInstance = map;
     this.onMapMoving();
+    this.onMapMoved();
   }
 
   public onMapMoving() {
