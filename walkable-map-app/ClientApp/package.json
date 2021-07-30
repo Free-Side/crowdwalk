@@ -5,24 +5,21 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:ssr": "ng run walkable_map_app:server:dev",
     "lint": "ng lint"
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "10.2.5",
     "@angular/common": "10.2.5",
     "@angular/compiler": "10.2.5",
     "@angular/core": "10.2.5",
     "@angular/forms": "10.2.5",
-    "@angular/localize": "10.2.5",
     "@angular/platform-browser": "10.2.5",
     "@angular/platform-browser-dynamic": "10.2.5",
-    "@angular/platform-server": "10.2.5",
     "@angular/router": "10.2.5",
     "@asymmetrik/ngx-leaflet": "^8.1.0",
     "@ng-bootstrap/ng-bootstrap": "^8.0.4",
     "bootstrap": "^4.5.0",
+    "jquery": "^3.6.0",
     "leaflet": "^1.7.1",
     "tslib": "^2.3.0",
     "zone.js": "~0.10.3"
@@ -31,7 +28,6 @@
     "@angular-devkit/build-angular": "^0.1002.3",
     "@angular/cli": "^10.2.3",
     "@angular/compiler-cli": "^10.2.5",
-    "@angular/language-service": "^10.2.5",
     "@types/leaflet": "^1.7.4",
     "@types/node": "~12.11.6",
     "typescript": "4.0.8"
