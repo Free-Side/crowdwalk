@@ -1,7 +1,9 @@
 <div class="map"
      leaflet
      [leafletOptions]="mapOptions"
+     [leafletLayers]="mapLayers"
      (leafletMapReady)="onMapReady($event)"
-     (leafletMapMove)="onMapMoved($event)">
+     (leafletMapMove)="onMapMoving()"
+     (leafletMapMoveEnd)="onMapMoved()">
 </div>
 <div class="location">{{ location }}</div>

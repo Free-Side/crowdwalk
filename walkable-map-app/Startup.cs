@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using ServcoHackathon.Internal;
 
 namespace ServcoHackathon {
     public class Startup {
@@ -24,6 +25,8 @@ namespace ServcoHackathon {
                         builder.AllowAnyHeader();
                     });
             });
+
+            services.AddMvc(o => o.InputFormatters.Insert(0, new XmlInputFormatter()));
 
             services.AddControllersWithViews();
             // In production, the Angular files will be served from this directory

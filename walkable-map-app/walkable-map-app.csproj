@@ -28,6 +28,15 @@
     <_ContentIncludedByDefault Remove="ClientApp\e2e\tsconfig.e2e.json" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Remove="Data\Videos.json" />
+    <EmbeddedResource Include="Data\Videos.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
     <!-- Ensure Node.js is installed -->
     <Exec Command="node --version" ContinueOnError="true">
